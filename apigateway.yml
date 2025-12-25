@@ -13,28 +13,28 @@ spring:
       routes:
 
         # ================= AUTH SERVICE =================
-        - id: auth-service
+        - id: authservice
           uri: http://localhost:8080
           predicates:
             - Path=/auth/**
          
 
         # ================= COURSE SERVICE =================
-        - id: course-service
+        - id: courseservice
           uri: http://localhost:8081
           predicates:
             - Path=/courses/**
          
 
         # ================= ENROLLMENT SERVICE =================
-        - id: enrollment-service
+        - id: enrollmentservice
           uri: http://localhost:8082
           predicates:
             - Path=/enrollments/**
           
 
         # ================= STUDENT SERVICE =================
-        - id: student-service
+        - id: studentservice
           uri: http://localhost:8083
           predicates:
             - Path=/students/**
