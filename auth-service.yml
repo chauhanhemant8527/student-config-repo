@@ -18,3 +18,8 @@ spring:
 jwt:
   secret: mysecretkey123456789
   expiration: 86400000   # 1 day
+
+  eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
